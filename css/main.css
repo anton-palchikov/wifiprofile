@@ -1522,6 +1522,10 @@
   }
 
   .input__arrow {
+    top: 46px;
+  }
+
+  .input__arrow--blue {
     top: 36px;
   }
 
