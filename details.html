@@ -241,9 +241,9 @@
                                             <div class="form__row">
                                                 <label for="id" class="input__title">ID</label>
                                                 <select class="form__input form__input--select" id="id">
-                                                    <option selected>Passport</option>
+                                                    <option>Passport</option>
                                                 </select>
-                                                <i class="fa fa-angle-down input__arrow input__arrow--blue" aria-hidden="true"></i>
+                                                <i class="fa fa-angle-down input__arrow input__arrow--blue" aria-hidden="true" id="test-button"></i>
                                             </div>
                                             <div class="form__row">
                                                 <label for="idnumber" class="input__title">ID number</label>
@@ -295,7 +295,8 @@
                                                     document requires third party verification of your investor status by
                                                     any party outlined in the template document. If your profile is self-certified,
                                                     but no certification document is provided, then the account will remain
-                                                    incomplete.</div>
+                                                    incomplete.
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -303,7 +304,14 @@
                                         <div class="col-lg-2 hidden-md"></div>
                                         <div class="col-lg-10">
                                             <div class="form__bottom">
-                                                <input type="file" class="file" name="file">
+                                                <div class="file__wrapper">
+                                                    <input type="file" class="file" name="file">
+                                                    <img src="img/file-img.png" alt="" class="file__image">
+                                                    <div class="file__text">
+                                                        Drop to upload certification document
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="lk__link">Template</a>
                                                 <div class="balance__title">
                                                     Disclaimer
                                                 </div>
@@ -457,6 +465,7 @@
     <script src="js/app.js?v=vjk3ln34664198234zdf" defer async></script>
     <!--     <script src="plugins/dropzone.js"></script> -->
     <script src="js/lk.js" defer async></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
