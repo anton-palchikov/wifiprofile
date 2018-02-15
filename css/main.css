@@ -983,7 +983,7 @@
 .email__confirm {
   font-size: 16px;
   text-align: center;
-  padding: 40px;
+  padding: 20px 40px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
