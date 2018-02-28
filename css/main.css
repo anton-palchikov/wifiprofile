@@ -359,9 +359,9 @@
 }
 
 .balance__text {
-  color: #D8D8D8;
+  color: #000;
   margin-bottom: 20px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .balance__amount {
