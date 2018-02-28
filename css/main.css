@@ -212,6 +212,10 @@
   padding-top: 120px;
 }
 
+.section {
+  min-width: initial;
+}
+
 .section__middle {
   min-height: initial;
 }
