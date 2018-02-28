@@ -212,6 +212,10 @@
   padding-top: 120px;
 }
 
+.section__middle {
+  min-height: initial;
+}
+
 .section__title--profile {
   opacity: .5;
   padding-bottom: 0;
