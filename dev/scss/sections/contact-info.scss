@@ -1,0 +1,160 @@
+.contact__form {
+	margin-bottom: 400px;
+}
+
+.email__confirm {
+	font-size: 16px;
+	text-align: center;
+	padding: 20px 40px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include phones {
+		flex-direction: column;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to left, #01ECA0 0%, #01AEEB 100%);
+		border-radius: 10px;
+		opacity: .5;
+		z-index: -1;
+	}
+}
+
+.btn--resend {
+	text-transform: uppercase;
+	max-width: 150px;
+	padding: 13px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #4DA8A9;
+	border: 3px solid #fff;
+	border-color: #fff;
+	@include phones {
+		margin-top: 10px;
+	}
+}
+
+.confirm__text {
+	color: #fff;
+}
+
+.form__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+	@include phones {
+		flex-direction: column;
+	}
+}
+
+.btn--pass {
+	text-transform: uppercase;
+	max-width: 200px;
+	background-color: #EEEEEE;
+	font-size: 13px;
+	padding: 10px;
+	color: #001441;
+}
+
+.input__group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input__flag {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #EEEEEE;
+	height: 35px;
+	min-width: 45px;
+	border-radius: 20px;
+	margin-right: 10px;
+}
+
+.input__arrow {
+	position: absolute;
+	right: 15px;
+	top: 16px;
+	color: #DA1845;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 1;
+	@include phones {
+		top: 46px;
+	}
+	&--blue {
+		color: #66A7DB;
+		top: 5px;
+		@include phones {
+			top: 36px;
+		}
+	}
+	&--usd {
+		@include phones {
+			top: 57px;
+		}
+	}
+}
+
+.labels__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.btn--lk-small {
+	max-width: 150px;
+}
+
+.form__bottom {
+	padding-left: 65px;
+	@include phones {
+		padding-left: 0;
+	}
+}
+
+.chinesse__warning {
+	background-color: #DA325B;
+	color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 5px 0;
+}
+
+.warning__title {
+	text-transform: uppercase;
+}
+
+.file__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px 0;
+	border: 3px dashed #000;
+	border-radius: 10px;
+	width: 70%;
+	height: 190px;
+	@include phones {
+		width: 100%;
+	}
+}
+
+.file {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}

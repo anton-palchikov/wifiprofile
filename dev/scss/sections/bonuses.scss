@@ -1,0 +1,82 @@
+.bonuse__chart {
+	margin-top: 70px;
+	position: relative;
+	text-align: center;
+	@include tablets {
+		margin-top: 90px;
+	}
+	&--bottom {
+		margin-top: -190px;
+		@include tablets {
+			margin-top: 30px;
+		}
+	}
+}
+
+.section__subtitle {
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 65px;
+	margin-left: 5px;
+	@include tablets {
+		margin-top: 75px;
+		margin-left: 10px;
+	}
+}
+
+.bonuse__text {
+	margin-top: 70px;
+	@include phones {
+		margin-top: 30px;
+	}
+}
+
+.bonuse__title {
+	font-size: 13px;
+	color: #fff;
+	opacity: .7;
+}
+
+.bonuse__desc {
+	font-size: 17px;
+	color: #fff;
+}
+
+.bonuse__pic {
+	max-width: 100%;
+	height: auto;
+}
+
+.bonuse__amount {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.bonuse__amount-top {
+	font-size: 71px;
+}
+
+.bonuse__amout-bottom {
+	font-size: 17px;
+}
+
+.bonus__amount {
+	color: #10DBA2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	line-height: 1;
+	&--blue {
+		color: #16BBD1;
+		text-align: center;
+	}
+}
+
+.bonus__amount-top {
+	font-size: 60px;
+}
