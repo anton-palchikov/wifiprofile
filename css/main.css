@@ -484,7 +484,8 @@
 }
 
 .balance__link--title {
-  margin-top: 45px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .balance__links {
@@ -492,10 +493,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .balance__links--modal .balance__code {
@@ -503,6 +504,10 @@
   width: 100%;
   margin-top: 20px;
   margin-left: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
 .balance__code {
@@ -513,8 +518,12 @@
   background: linear-gradient(to right, #01aeeb 0%, #01eca0 100%);
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  width: 75%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60%;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
   margin-left: 40px;
+  margin-right: 20px;
   opacity: .8;
   display: -webkit-box;
   display: -webkit-flex;
@@ -532,7 +541,11 @@
 
 .balance__token {
   font-size: 24px;
-  margin-top: 45px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 .qr-icon {
@@ -1548,7 +1561,7 @@ a.bx-next:after {
 }
 
 .contact__form {
-  margin-bottom: 400px;
+  margin-bottom: 200px;
 }
 
 .email__confirm {
@@ -1813,6 +1826,9 @@ a.bx-next:after {
 
   .breadcrumb__link {
     margin-bottom: 10px;
+    width: 100%;
+    margin-right: 10px;
+    text-align: center;
   }
 
   .amount {
@@ -1821,6 +1837,7 @@ a.bx-next:after {
 
   .balance__token {
     font-size: 16px;
+    margin-bottom: 5px;
   }
 
   .code {
@@ -1910,6 +1927,7 @@ a.bx-next:after {
 
   .amount--bonus {
     margin-left: 0;
+    overflow: visible;
   }
 
   .amount__desc {
@@ -2090,6 +2108,18 @@ a.bx-next:after {
     flex-direction: column;
   }
 
+  .form__row--profile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
   .input__title {
     margin-bottom: 10px;
   }
@@ -2115,6 +2145,22 @@ a.bx-next:after {
     width: 100%;
   }
 
+  .btn--social {
+    font-size: 12px;
+  }
+
+  .section__title--top {
+    top: 0;
+  }
+
+  .breadcrumbs {
+    margin-top: 0;
+  }
+
+  .breadcrumb__item {
+    width: 100%;
+  }
+
   .bonus__text-right {
     font-size: 50px;
   }
@@ -2123,20 +2169,60 @@ a.bx-next:after {
     font-size: 32px;
   }
 
+  .amount {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  .amount--small {
+    font-size: 1.8rem;
+  }
+
+  .amount__desc {
+    font-size: 10px;
+    width: 60%;
+  }
+
+  .currency {
+    font-size: 12px;
+  }
+
+  .balance__code {
+    width: 70%;
+    margin-right: 10px;
+    padding: 5px;
+    height: 25px;
+  }
+
   .balance__token {
-    margin-top: 30px;
-    margin-right: 30px;
-    margin-left: -10px;
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .code {
+    font-size: 8px;
   }
 
   .btn--ref {
-    font-size: 12px;
+    font-size: 10px;
     min-width: 60px;
+    padding: 5px;
+    padding-top: 8px;
   }
 
   .total__card {
     padding: 10px;
+  }
+
+  .total__title {
+    font-size: 16px;
+  }
+
+  .total__number {
+    font-size: 22px;
+  }
+
+  .total__text {
+    font-size: 12px;
   }
 
   .bonuse__text {
