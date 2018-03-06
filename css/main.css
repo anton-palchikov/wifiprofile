@@ -2234,6 +2234,7 @@ a.bx-next:after {
     width: 65px;
     height: 65px;
     font-size: 12px;
+    left: 18px;
   }
 
   .timeline__line {
@@ -2296,6 +2297,18 @@ a.bx-next:after {
 
   .file__wrapper {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .timeline__dot {
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .timeline__dot {
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
