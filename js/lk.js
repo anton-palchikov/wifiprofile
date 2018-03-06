@@ -152,7 +152,15 @@ $(function() {
     }
 })
 
-//
+$("[data-fancybox]").fancybox({
+    touch : false
+});
+
+if ($(window).width() <= 575) {
+    $("[data-fancybox]").fancybox({
+        touch : true
+    });
+}
 
 
 // console.log($('.cases__text').length);

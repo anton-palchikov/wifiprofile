@@ -507,7 +507,6 @@
 }
 
 .balance__links--modal .balance__code {
-  padding: 20px;
   width: 100%;
   margin-top: 20px;
   margin-left: 0;
@@ -515,6 +514,10 @@
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
+}
+
+.balance__links--modal .code {
+  padding: 20px 0;
 }
 
 .balance__code {
