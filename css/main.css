@@ -1882,6 +1882,10 @@ a.bx-next:after {
     max-width: 100px;
   }
 
+  .btn--copy {
+    display: block;
+  }
+
   .banner__step {
     margin-bottom: 20px;
   }
@@ -2226,10 +2230,6 @@ a.bx-next:after {
   .btn--ref {
     font-size: 10px;
     min-width: 60px;
-  }
-
-  .btn--copy {
-    display: block;
   }
 
   .total__card {
