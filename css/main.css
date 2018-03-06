@@ -200,7 +200,7 @@
 .lk__desc {
   color: #fff;
   margin: 70px 0;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 .lk__title {
@@ -212,6 +212,7 @@
 .wave__lk {
   top: initial;
   z-index: 0;
+  height: 500px;
 }
 
 .section__content {
@@ -219,7 +220,11 @@
 }
 
 .section {
-  min-width: initial;
+  min-height: initial;
+}
+
+.section__contacts {
+  padding: 50px 0;
 }
 
 .section__middle {
@@ -1519,7 +1524,7 @@ a.bx-next:after {
 }
 
 .verification__status {
-  margin: 75px 0 275px 0;
+  margin: 75px 0 0 0;
   text-align: center;
 }
 
@@ -1558,10 +1563,6 @@ a.bx-next:after {
   width: 35%;
   margin: 0 auto;
   padding: 25px 0;
-}
-
-.contact__form {
-  margin-bottom: 200px;
 }
 
 .email__confirm {
