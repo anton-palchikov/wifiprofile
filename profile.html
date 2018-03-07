@@ -99,46 +99,54 @@
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="balance__amount">
-                                                            <img src="img/eth.png" alt="" class="balance__icon">
-                                                            <div class="amount">19.63893672805828995</div>
-                                                            <div class="currency">ETH</div>
-                                                            <div class="balance__token pull-right">
-                                                                &asymp;
-                                                                <span class="token__amount">170.00</span> WT
+                                                            <div class="amount__block">
+                                                                <img src="img/eth.png" alt="" class="balance__icon">
+                                                                <div class="amount">19.63893672805828995</div>
+                                                            </div>
+                                                            <div class="currency__block">
+                                                                <div class="currency">ETH</div>
+                                                                <div class="balance__token">
+                                                                    &asymp;
+                                                                    <span class="token__amount">170.00</span> WT
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="balance__links">
                                                             <div class="balance__code">
                                                                 <div class="code">0x620a6201140fa3da18397c0c6377852b4617bccb</div>
-                                                                <a href="#" class="btn btn__buy btn--code">Copy</a>
                                                                 <!-- <a href="#" class="btn btn__buy btn--code btn-qr">
                                                                     <img src="img/qr.png" alt="" class="qr-icon">
                                                                 </a> -->
                                                             </div>
+                                                            <button class="btn btn__buy btn--blik btn--ref btn--hidden">COPY</button>
                                                             <a data-fancybox data-src="#hidden-content" href="javascript:;" class="btn btn__buy btn--blik btn--ref">BUY</a>
                                                         </div>
-                                                        <button class="btn btn__buy btn--code btn__copy btn--copy" data-clipboard-target="#eth-address" data-clipboard-action="copy">Copy</button>
+                                                        <button class="btn btn__buy btn--code btn__copy btn--copy btn--ref" data-clipboard-target="#eth-address" data-clipboard-action="copy">Copy</button>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="balance__amount">
-                                                            <img src="img/bitcoin.png" alt="" class="balance__icon">
-                                                            <div class="amount">0.00076608</div>
-                                                            <div class="currency">BTC</div>
-                                                            <div class="balance__token">
-                                                                &asymp;
-                                                                <span class="token__amount">1.49</span> WT
+                                                            <div class="amount__block">
+                                                                <img src="img/bitcoin.png" alt="" class="balance__icon">
+                                                                <div class="amount">0.00076608</div>
+                                                            </div>
+                                                            <div class="currency__block">
+                                                                <div class="currency">BTC</div>
+                                                                <div class="balance__token">
+                                                                    &asymp;
+                                                                    <span class="token__amount">1.49</span> WT
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="balance__links">
                                                             <div class="balance__code">
                                                                 <div class="code">2L88awZpdLZgQeDYKmwA8GVowe2UEBZnev</div>
-                                                                <a href="#" class="btn btn__buy btn--code">Copy</a>
                                                                 <!-- <a href="#" class="btn btn__buy btn--code btn-qr">
                                                                     <img src="img/qr.png" alt="" class="qr-icon">
                                                                 </a> -->
                                                             </div>
+                                                            <button class="btn btn__buy btn--blik btn--ref btn--hidden">COPY</button>
                                                             <a data-fancybox data-src="#hidden-content" href="javascript:;" class="btn btn__buy btn--blik btn--ref">BUY</a>
                                                         </div>
                                                         <button class="btn btn__buy btn--code btn__copy btn--copy" data-clipboard-target="#eth-address" data-clipboard-action="copy">Copy</button>
@@ -151,7 +159,7 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="balance__amount">
+                                                        <div class="balance__amount balance__amount--low">
                                                             <img src="img/wtoken.png" alt="" class="balance__icon">
                                                             <div class="amount">42.55</div>
                                                             <div class="currency">WT</div>
@@ -163,7 +171,7 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="balance__amount">
+                                                        <div class="balance__amount balance__amount--low">
                                                             <div class="amount amount--bonus">10%</div>
                                                             <div class="amount__desc">
                                                                 <div class="amount__top">You have a personal bonus 10%</div>
@@ -179,7 +187,7 @@
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="balance__amount">
-                                                            <div class="balance__link balance__link--title">Referral program</div>
+                                                            <div class="balance__link">Referral program</div>
                                                             <div class="balance__token">
                                                                 <span class="token__amount">6.39</span> WT
                                                             </div>
@@ -492,7 +500,7 @@
                                                     <div class="dot__text">18</div>march</div>
                                                     <div class="timeline__line"></div>
                                                     <a href="#" class="timeline__link">
-                                                        <i class="fa fa-angle-double-right timeline__icon"></i>
+                                                        <i class="fa fa-angle-double-down timeline__icon"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -701,13 +709,12 @@
                                     <div class="balance__links balance__links--modal">
                                         <div class="balance__code">
                                             <div class="code">0x620a6201140fa3da18397c0c6377852b4617bccb</div>
-                                            <a href="#" class="btn btn__buy btn--code">Copy</a>
                                             <!-- <a href="#" class="btn btn__buy btn--code btn-qr">
                                                 <img src="img/qr.png" alt="" class="qr-icon">
                                             </a> -->
                                         </div>
+                                        <button class="btn btn__buy btn--ref">COPY</button>
                                     </div>
-                                    <button class="btn btn__buy btn--code btn__copy btn--copy" data-clipboard-target="#eth-address" data-clipboard-action="copy">Copy</button>
                                     <div class="balance__link balance__link--modal">Copy this address and make the payment</div>
                                     <div class="qr-code">
                                         <img src="img/qr-code.png" alt="" class="qr-code__pic">
