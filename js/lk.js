@@ -138,27 +138,18 @@ $(window).scroll(function () {
     }
 });
 
-
-$(function() {
-    if($(window).width() <= 575) {
-
-        $('.bonus__slider').bxSlider({
-            pager: false,
-            prevText: '',
-            nextText: '',
-            startSlide: 1,
-            infiniteLoop: false
-        });
-    }
-})
-
-$("[data-fancybox]").fancybox({
-    touch : false
-});
-
 if ($(window).width() <= 575) {
-    $("[data-fancybox]").fancybox({
-        touch : true
+    var reCaptchaWidth = 304;
+                // Get the containing element's width
+    var containerWidth = $('.form__elem').width();
+                
+                // Only scale the reCAPTCHA if it won't fit
+                // inside the container
+
+    var captchaScale = containerWidth / reCaptchaWidth;
+                // Apply the transformation
+    $('.g-recaptcha').css({
+        'transform':'scale('+captchaScale+')'
     });
 }
 

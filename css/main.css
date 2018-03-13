@@ -231,6 +231,17 @@
   min-height: initial;
 }
 
+.g-recaptcha {
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform-origin: left top;
+}
+
+.g-recaptcha > div {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 .section__title--profile {
   opacity: .5;
   padding-bottom: 0;
@@ -1788,6 +1799,10 @@ a.bx-next:after {
   height: 190px;
 }
 
+.file__text {
+  text-align: center;
+}
+
 .file {
   position: absolute;
   top: 0;
@@ -2217,6 +2232,14 @@ a.bx-next:after {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .form__row--row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .input__title {
