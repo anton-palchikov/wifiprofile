@@ -4,7 +4,6 @@
   -webkit-border-radius: 10px;
   border-radius: 10px;
   font-size: .9rem;
-  margin-top: 20px;
   opacity: 0;
 }
 
@@ -249,6 +248,10 @@
   font-weight: 300;
 }
 
+.section__title--top {
+  top: 0;
+}
+
 #navigation {
   top: 20px;
   z-index: 9999;
@@ -268,7 +271,7 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 70px;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -1616,6 +1619,7 @@ a.bx-next:after {
   font-size: 16px;
   text-align: center;
   padding: 20px 40px;
+  margin-bottom: 20px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2271,8 +2275,8 @@ a.bx-next:after {
     font-size: 12px;
   }
 
-  .section__title--top {
-    top: 0;
+  .section__contacts {
+    padding-top: 0;
   }
 
   .breadcrumbs {
