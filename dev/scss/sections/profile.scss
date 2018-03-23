@@ -4,14 +4,20 @@
 	top: 85px;
 	font-weight: 300;
 	@include desktop {
-		left: 10px;
+		left: 6px;
 	}
+}
+
+.section__title--top {	
+	top: 0;
 }
 
 #navigation {
 	top: 20px;
+	z-index: 9999;
 	&.fixed {
 		top: 0;
+		z-index: 9999;
 	}
 }
 
@@ -19,10 +25,19 @@
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 70px;
+	margin-top: 0;
 	padding: 0;
 	@include tablets {
 		margin-top: 90px;
+	}
+	@include phones {
+		margin-top: 0;
+	}
+}
+
+.breadcrumb__item {
+	@include phones {
+		width: 100%;
 	}
 }
 
@@ -37,6 +52,9 @@
 	font-size: 13px;
 	@include tablets {
 		margin-bottom: 10px;
+		width: 100%;
+		margin-right: 10px;
+		text-align: center;
 	}
 	&:hover {
 		color: #fff;
@@ -149,7 +167,7 @@
 
 .balance__amount {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	margin-top: 20px;
 	font-size: 71px;
@@ -161,6 +179,11 @@
 			margin-right: 10px;
 		}
 	}
+	&--low {
+		.amount {
+			margin-right: 10px;
+		}
+	}
 }
 
 .balance__icon {
@@ -169,7 +192,7 @@
 
 .amount {
 	font-size: 60px;
-	margin: 0 20px;
+	margin-left: 20px;
 	background: linear-gradient(to right, #01aeeb 0%, #01eca0 100%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -183,6 +206,10 @@
 		font-size: 20px;
 		overflow: hidden;
 	}
+	@include phones {
+		font-size: 12px;
+		margin-left: 5px;
+	}
 	&--small {
 		font-size: 37px;
 		@include desktop {
@@ -190,7 +217,10 @@
 			margin: 0;
 		}
 		@include middle {
-			font-size: 1.8rem;
+			font-size: 24px;
+		}
+		@include phones {
+			font-size: 18px;
 		}
 	}
 	&--bonus {
@@ -201,6 +231,15 @@
 		margin-left: 40px;
 		@include middle {
 			margin-left: 0;
+			overflow: visible;
+		}
+	}
+	&--modal {
+		@include tablets {
+			font-size: 18px;
+		}
+		@include phones {
+			font-size: 20px;
 		}
 	}
 }
@@ -209,6 +248,10 @@
 	font-size: 16px;
 	@include middle {
 		font-size: 13px;
+	}
+	@include phones {
+		font-size: 10px;
+		width: 60%;
 	}
 }
 
@@ -221,22 +264,27 @@
 }
 
 .currency {
-	align-self: flex-end;
-	margin-bottom: 10px;
 	font-size: 25px;
+	@include tablets {
+		font-size: 18px;
+	}
 	@include middle {
 		font-size: 16px;
-		margin-bottom: 5px;
+	}
+	@include phones {
+		font-size: 12px;
 	}
 	&--small {
-		margin-bottom: 10px;
 		margin-left: 10px;
 		font-size: 17px;
-		@include desktop {
-			margin-bottom: 5px;
+	}
+	&--modal {
+		@include tablets {
+			font-size: 18px;
 		}
 	}
 }
+
 
 .balance__link {
 	margin: 20px 0;
@@ -257,9 +305,6 @@
 		margin-left: 0;
 		font-size: 13px;
 	}
-	&--title {
-		margin-top: 45px;
-	}
 }
 
 .balance__links {
@@ -267,10 +312,11 @@
 	justify-content: space-between;
 	&--modal {
 		.balance__code {
-			padding: 10px 20px;
-			width: 100%;
-			margin-top: 20px;
 			margin-left: 0;
+			flex: 0 0 75%;
+		}
+		.code {
+			padding: 20px 0;
 		}
 	}
 }
@@ -279,21 +325,58 @@
 	padding: 0px 20px;
 	background: linear-gradient(to right, #01aeeb 0%, #01eca0 100%);
 	border-radius: 30px;
-	width: 75%;
+	flex: 0 0 70%;
 	margin-left: 40px;
 	opacity: .8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@include wide {
+		flex: 0 0 65%;
+	}
+	@include desktop {
+		flex: 0 0 60%;
+	}
 	@include middle {
-		width: 80%;
+		flex: 0 0 79%;
 		margin-left: 0;
+	}
+	@include phones {
+		flex: 0 0 70%;
+		width: 70%;
+		margin-right: 10px;
+		padding: 15px;
+		height: 25px;
+	}
+}
+.amount__block {
+	display: flex;
+	flex: 0 0 70%;
+	align-items: center;
+	@include desktop {
+		flex: 0 0 60%;
+	}
+}
+
+.currency__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex: 0 0 21%;
+	@include wide {
+		flex: 0 0 25%;
+	}
+	@include desktop {
+		flex: 0 0 29%;
+	}
+	@include phones {
+		flex: 0 0 40%;
 	}
 }
 
 .balance__token {
 	font-size: 24px;
-	margin-top: 45px;
+	margin-left: auto;
 	@include desktop {
 		font-size: 20px;
 	}
@@ -301,10 +384,7 @@
 		font-size: 16px;
 	}
 	@include phones {
-		margin-top: 30px;
-		margin-right: 30px;
-		margin-left: -10px;
-		font-size: 13px;
+		font-size: 12px;
 	}
 }
 
@@ -316,23 +396,18 @@
 .code {
 	margin-right: auto;
 	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	@include tablets {
 		font-size: 14px;
 	}
 	@include middle {
 		font-size: 13px;
-		overflow: auto;
 	}
 }
 
-.btn--code {
-	background-color: #fff;
-	color: #000;
-	padding: 10px 5px;
-	max-width: 70px;
-	text-transform: uppercase;
-	font-size: 13px;
-	@include tablets {
+.btn--hidden {
+	@include middle {
 		display: none;
 	}
 }
@@ -364,15 +439,32 @@
 		min-width: 70px;
 	}
 	@include phones {
-		font-size: 12px;
+		font-size: 10px;
 		min-width: 60px;
 	}
 }
 
 .btn--small {
 	padding: 10px;
-	max-width: 100px;
+	max-width: 130px;
 	margin-left: 10px;
+	@include phones {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+}
+
+.btn--copy {
+	background-color: #da1845;
+	color: #fff;
+	margin-top: 10px;
+	display: none;
+	padding: 10px;
+	max-width: 100px;
+	font-size: 10px;
+	@include middle {
+		display: block;
+	}
 }
 
 .refill__modal {
@@ -488,7 +580,7 @@
 	font-size: 17px;
 	text-transform: uppercase;
 	max-width: 300px;
-	padding: 15px 50px;
+	padding: 15px;
 	@include middle {
 		font-size: 14px;
 	}
@@ -512,6 +604,11 @@
 	@include middle {
 		font-size: 20px;
 	}
+	@include phones {
+		font-size: 16px;
+		align-self: flex-start;
+		margin-top: 5px;
+	}
 }
 
 .total__number {
@@ -519,10 +616,16 @@
 	@include middle {
 		font-size: 30px;
 	}
+	@include phones {
+		font-size: 22px;
+	}
 }
 
 .total__text {
 	color: #A3A8B4;
+	@include phones {
+		font-size: 12px;
+	}
 }
 
 .left__path,
@@ -1030,4 +1133,8 @@ a.bx-prev:before {
 a.bx-next:after {
 	content: "\f101";
 	margin-left: 10px;
+}
+
+.social__list {
+	flex-wrap: wrap;
 }

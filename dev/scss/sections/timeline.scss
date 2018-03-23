@@ -13,8 +13,10 @@
 
 .timeline__wrap {
 	position: relative;
-	margin-top: 70px;
+	margin-top: 85px;
 	@include middle {
+		position: absolute;
+		left: 7px;
 		margin-top: 90px;
 		height: 100%;
 	}
@@ -37,11 +39,24 @@
 	font-size: 16px;
 	text-align: center;
 	cursor: pointer;
-	@include phones {
-		width: 65px;
-		height: 65px;
-		font-size: 12px;
+	@include middle {
+		left: 50%;
+		transform: translate(-50%);
 	}
+	// @include phones {
+	// 	width: 65px;
+	// 	height: 65px;
+	// 	font-size: 12px;
+	// 	left: 18px;
+	// }
+
+	// @include phones375 {
+	// 	left: 8px;
+	// }
+
+	// @include phones320 {
+	// 	left: 0;
+	// }
 	&:before {
 		content: '';
 		background: -webkit-linear-gradient(bottom, #01aeeb 0%, #01eca0 100%);
@@ -76,13 +91,13 @@
 		position: absolute;
 		width: 2px;
 		height: 100%;
-		left: 40%;
+		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
-	@include phones {
-		left: 65%;
-	}
+	// @include phones {
+	// 	left: 65%;
+	// }
 }
 
 .dot__text {
@@ -90,7 +105,7 @@
 	line-height: 1;
 }
 
-.timeline__icon {
+.timeline__link {
 	position: absolute;
 	font-size: 54px;
 	top: 49%;
@@ -100,13 +115,14 @@
 		right: -12%;
 	}
 	@include middle {
-		transform: rotate(90deg);
-		top: 125%;
-		left: -25%;
+		top: 85%;
+		left: 51%;
+		transform: translate(-50%);
+		text-align: center; 	
 	}
 	@include phones {
-		top: 95%;
-		left: 30%;
+		left: 50%;
+		right: initial;
 	}
 }
 
