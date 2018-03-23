@@ -260,8 +260,11 @@
                                                 We give promotional codes to our partners and on events.
                                             </div>
                                             <div class="form__row form__row--profile">
-                                                <input type="text" class="form__input">
-                                                <button href="" class="btn btn__buy btn--blik btn--small">ADD</button>
+                                                <form id="promo-code-form" action="/check_promo_code" accept-charset="UTF-8" method="post">
+                                                    <input name="utf8" type="hidden" value="✓">
+                                                    <input type="text" name="promo_code" id="promo_code" value="" required="required" class="form__input">
+                                                    <input type="submit" name="commit" value="Add" class="btn btn__buy btn--blik btn--small" data-disable-with="Add">
+                                                </form>
                                             </div>
                                         </div>
                                     </div>

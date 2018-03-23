@@ -241,6 +241,22 @@
   margin-top: 20px;
 }
 
+#promo-code-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .section__title--profile {
   opacity: .5;
   padding-bottom: 0;
@@ -2277,6 +2293,12 @@ a.bx-next:after {
 
   .section__contacts {
     padding-top: 0;
+  }
+
+  #promo-code-form {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .breadcrumbs {
