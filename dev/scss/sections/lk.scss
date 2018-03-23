@@ -1,21 +1,27 @@
 .form__elem {
 	background-color: #fff;
-	padding: 45px 30px;
+	padding: 20px 30px;
 	border-radius: 10px;
 	font-size: .9rem;
 	opacity: 0;
+	margin-bottom: 10px;
+	@include phones {
+		padding: 20px 30px;
+	}
 }
 
 .form__title {
 	font-size: 1.5rem;
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	text-align: center;
 }
 
 .form__group {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	position: relative;
 }
 
 .form__row {
@@ -110,6 +116,9 @@
 			min-width: 100px;
 		}
 	}
+	&--main {
+		width: 100%;
+	}
 }
 
 .form__check {
@@ -121,7 +130,7 @@
 
 .btn__lk {
 	margin: 20px 0;
-	padding: 20px;
+	padding: 15px;
 	font-size: .9rem;
 }
 
@@ -171,10 +180,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 20px 0;
-	@include phones {
-		font-size: 12px;
-	}
+	margin: 10px 0;
+	font-size: 12px;
+	flex: 0 0 48%;
 }
 
 .btn--fb {
@@ -186,7 +194,7 @@
 }
 
 .lk__icon {
-	font-size: 2rem;
+	font-size: 18px;
 	margin-right: 10px;
 }
 
@@ -209,7 +217,7 @@
 }
 
 .section__content {
-	padding-top: 120px;
+	padding-top: 100px;
 }
 
 .section {
@@ -218,6 +226,7 @@
 
 .section__contacts {
 	padding: 50px 0;
+	padding-top: 0;
 }
 
 .section__middle {
