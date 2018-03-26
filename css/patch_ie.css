@@ -1,0 +1,13 @@
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .section__title,
+    .amount {
+        background: transparent !important;
+        background-clip: initial !important;
+        -webkit-text-fill-color: initial !important;
+        color: #429D9B !important;
+    }
+    .input__arrow {
+        display: none;
+    }
+}
