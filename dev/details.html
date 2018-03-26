@@ -15,6 +15,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="plugins/datepicker/datepicker.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="favicon.ico" rel="shortcut icon">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -203,16 +204,16 @@
                             <div class="section__title section__title--profile section__title--top">profile</div>
                             <ul class="breadcrumbs">
                                 <li class="breadcrumb__item">
-                                    <a href="#" class="breadcrumb__link">Balance</a>
+                                    <a href="profile.html" class="breadcrumb__link">Balance</a>
                                 </li>
                                 <li class="breadcrumb__item">
-                                    <a href="#" class="breadcrumb__link">Contact information</a>
+                                    <a href="contact-info.html" class="breadcrumb__link">Contact information</a>
                                 </li>
                                 <li class="breadcrumb__item breadcrumb__item--active">
-                                    <a href="#" class="breadcrumb__link">Personal Details</a>
+                                    <a href="/" class="breadcrumb__link">Personal Details</a>
                                 </li>
                                 <li class="breadcrumb__item">
-                                    <a href="#" class="breadcrumb__link">Verification</a>
+                                    <a href="verification.html" class="breadcrumb__link">Verification</a>
                                 </li>
                             </ul>
                         </div>
@@ -226,7 +227,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="contact__form">
-                                <form action="/" class="form__elem dropzone" id="my-awesome-dropzone">
+                                <form action="/" class="form__elem">
                                     <div class="form__header">
                                         <div class="form__title mb-0">Personal details for US residents</div>
                                         <div class="title__icon">
@@ -248,7 +249,7 @@
                                             </div>
                                             <div class="form__row">
                                                 <label for="date" class="input__title">Date of birth</label>
-                                                <input type="date" class="form__input form__input--2 form__input--date" id="date">
+                                                <input type="text" class="form__input form__input--2 form__input--date" data-toggle="datepicker" id="date">
                                                 <i class="fa fa-calendar-check-o input__arrow input__arrow--blue" aria-hidden="true"></i>
                                             </div>
                                             <div class="form__row">
@@ -435,8 +436,9 @@
                                                     the current year.</div>
                                                 <div class="form__row form__row--2">
                                                     <button type="submit" class="btn btn__buy btn--blik btn__lk btn--lk-small">
-                                                        VERIFY
+                                                        Save changes
                                                     </button>
+                                                    <a class="btn btn__buy btn--blik btn__lk verify-btn not-active" href="/send-to-verification?lang=en">Send to Verification</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -572,7 +574,7 @@
         crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
     <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-    <!--     <script src="plugins/dropzone.js"></script> -->
+    <script src="plugins/datepicker/datepicker.min.js"></script>
     <script src="js/lk.js" defer async></script>
 </body>
 

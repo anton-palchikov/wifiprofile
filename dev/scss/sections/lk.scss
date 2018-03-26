@@ -28,7 +28,7 @@
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	margin-bottom: 5px;
 	&--2 {
 		justify-content: flex-start;
@@ -45,6 +45,7 @@
 	}
 	@include phones {
 		flex-direction: column;
+		align-items: flex-start;
 	}
 	&--profile {
 		@include phones {
@@ -54,6 +55,7 @@
 		}
 	}
 	&--row {
+		align-items: baseline;
 		@include phones {
 			flex-direction: row;
 		}
@@ -78,7 +80,7 @@
 		width: 60%;
 		padding: 0;
 		padding-left: 10px;
-		margin-bottom: 15px;
+		margin: 7px 0;
 		@include phones {
 			width: 100%;
 		}
@@ -93,20 +95,22 @@
 	}
 	&--2 {
 		width: 60%;
-		margin-bottom: 15px;
+		margin: 7px 0;
 		@include phones {
 			width: 100%;
 		}
 	}
 	&--3 {
 		width: 53%;
-		margin: 10px 0;
+		margin: 7px 0;
+		@include tablets {
+			width: 60%;
+		}
 		@include phones {
 			width: 100%;
 		}
 	}
 	&--phone {
-		margin: 0;
 		min-width: 215px;
 		@include phones {
 			width: 100%;
@@ -209,7 +213,7 @@
 
 .wave__lk {
 	top: initial;
-	z-index: 0;
+	z-index: -1;
 	height: 500px;
 }
 
@@ -232,12 +236,12 @@
 
 .g-recaptcha {
 	transform-origin: left top;
-  -webkit-transform-origin: left top;
+	-webkit-transform-origin: left top;
 }
 
 .g-recaptcha>div {
-    margin: 0 auto;
-    margin-top: 20px;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
 .section__contacts {
@@ -250,7 +254,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	@include phones {
 		flex-wrap: wrap;
 	}
