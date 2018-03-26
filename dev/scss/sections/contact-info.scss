@@ -91,9 +91,15 @@
 	}
 	&--blue {
 		color: #66A7DB;
+		top: 5px;
+		@include phones {
+			top: 25px;
+		}
+	}
+	&--index {
 		top: 30px;
 		@include phones {
-			top: 40px;
+			top: 30px;
 		}
 	}
 	&--usd {
