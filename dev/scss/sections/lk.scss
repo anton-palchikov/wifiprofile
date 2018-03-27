@@ -259,3 +259,9 @@
 		flex-wrap: wrap;
 	}
 }
+
+.navbar {
+	@include phones {
+		margin-bottom: 20px;
+	}
+}
