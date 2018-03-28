@@ -732,6 +732,7 @@
   background: url("../img/flag_usa.png") no-repeat 100% 0/contain;
   background-color: #DA325B;
   padding: 50px 30px;
+  margin-bottom: 25px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   line-height: 1;
