@@ -1,6 +1,9 @@
 .verification__status {
 	margin: 75px 0 0 0;
 	text-align: center;
+	@include middle {
+		margin: 10px 0;
+	}
 }
 
 .verification__title {
@@ -13,21 +16,21 @@
 	font-size: 71px;
 	text-transform: uppercase;
 	background: linear-gradient(to right, #01ECA0 0%, #01DDB2 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: .5;
-    @include phones {
-    	font-size: 50px;
-    }
-    &--progress {
-    	background: linear-gradient(to right, #DA1845 0%, #865285 100%);
-    	background-clip: text;
-       -webkit-text-fill-color: transparent;
-        opacity: .8;
-        @include phones {
-        	font-size: 40px;
-        }
-    }
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: .5;
+	@include phones {
+		font-size: 50px;
+	}
+	&--progress {
+		background: linear-gradient(to right, #DA1845 0%, #865285 100%);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		opacity: .8;
+		@include phones {
+			font-size: 40px;
+		}
+	}
 }
 
 .btn--verif {
