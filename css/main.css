@@ -2299,7 +2299,6 @@ a.bx-next:after {
 @media screen and (max-width: 520px) {
   .form__elem {
     padding: 5px 20px;
-    margin: 0;
   }
 
   .form__row {
