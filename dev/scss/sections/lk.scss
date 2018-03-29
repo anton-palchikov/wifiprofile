@@ -4,11 +4,10 @@
 	border-radius: 10px;
 	font-size: .9rem;
 	opacity: 1;
-	margin: 10px 0;
+	margin-bottom: 10px;
 	@include phones {
 		padding: 5px 20px;
 		margin: 0;
-		margin-bottom: 10px;
 	}
 }
 
