@@ -1,0 +1,70 @@
+.nav-title {
+    display: none;
+}
+
+.bottom-block {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    .nav-title {
+        display: initial;
+    }
+    .login-selector--hidden {
+        display: none;
+    }
+    .form__title--hidden {
+        display: none;
+    }
+    .input__title--hidden {
+        display: none;
+    }
+    .form__input--select {
+        margin: 0;
+    }
+    #navigation {
+        position: relative;
+        top: 10px;
+    }
+    .section__content {
+        padding-top: 0;
+    }
+    .form__elem {
+        padding: 10px 20px;
+    }
+    .input__arrow--index {
+        top: 10px;
+    }
+    .form__group {
+        margin-bottom: 5px;
+    }
+    .g-recaptcha>div {
+        margin-top: 0;
+    }
+    .input__title--check {
+        line-height: 1.3;
+    }
+    .lk__desc {
+        margin: 10px 0;
+    }
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #000;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #000;
+}

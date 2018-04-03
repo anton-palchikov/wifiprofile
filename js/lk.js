@@ -23,11 +23,12 @@ $(window).scroll(function () {
     $('.body__bg').css({
         'top': -(scroll / body_) + '%'
     });
-
-    if (scroll >= 20) {
-        $('#navigation').addClass('fixed');
-    } else {
-        $('#navigation').removeClass('fixed');
+    if ($(window).width() >= 576) {
+        if (scroll >= 20) {
+            $('#navigation').addClass('fixed');
+        } else {
+            $('#navigation').removeClass('fixed');
+        }
     }
 });
 
@@ -54,6 +55,14 @@ $(function () {
         zIndex: 2048,
     });
 });
+$(function () {
+    if ($(window).width() >= 576) {
+        $('.form__input').attr('placeholder', '');
+    }
+    $('.bottom-block').css({
+        "display": "initial"
+    })
+})
 
 
 // console.log($('.cases__text').length);
