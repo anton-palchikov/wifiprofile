@@ -7,7 +7,6 @@
 	margin-bottom: 10px;
 	@include phones {
 		padding: 5px 20px;
-		margin: 0;
 	}
 }
 
@@ -264,5 +263,30 @@
 .navbar {
 	@include phones {
 		margin-bottom: 20px;
+	}
+}
+
+.nav-title {
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#navigation {
+	@include phones {
+		position: relative;
+		top: 10px;
+	}
+}
+
+.section__content {
+	@include phones {
+		padding-top: 0;
+	}
+}
+
+.navbar-brand-m img {
+	@include phones {
+		max-height: 40px;
 	}
 }
