@@ -48,6 +48,9 @@
     .lk__desc {
         margin: 10px 0;
     }
+    .navbar-nav .nav-item.lang-selector {
+        margin-left: 0;
+    }
     select {
         color: grey;
     }
