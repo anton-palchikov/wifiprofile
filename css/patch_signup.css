@@ -1,5 +1,10 @@
 .nav-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
     display: none;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .bottom-block {
@@ -12,7 +17,7 @@
 
 @media screen and (max-width: 575px) {
     .nav-title {
-        display: initial;
+        display: block;
     }
     .login-selector--hidden {
         display: none;
@@ -31,7 +36,7 @@
         padding-top: 0;
     }
     .form__elem {
-        padding: 10px 20px;
+        padding: 24px 20px 10px 20px;
     }
     .input__arrow--index {
         top: 10px;
