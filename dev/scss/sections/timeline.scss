@@ -42,18 +42,15 @@
 	@include middle {
 		left: 50%;
 		transform: translate(-50%);
-	}
-	// @include phones {
+	} // @include phones {
 	// 	width: 65px;
 	// 	height: 65px;
 	// 	font-size: 12px;
 	// 	left: 18px;
 	// }
-
 	// @include phones375 {
 	// 	left: 8px;
 	// }
-
 	// @include phones320 {
 	// 	left: 0;
 	// }
@@ -94,8 +91,7 @@
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
-	}
-	// @include phones {
+	} // @include phones {
 	// 	left: 65%;
 	// }
 }
@@ -118,7 +114,7 @@
 		top: 85%;
 		left: 51%;
 		transform: translate(-50%);
-		text-align: center; 	
+		text-align: center;
 	}
 	@include phones {
 		left: 50%;
@@ -153,4 +149,12 @@
 	&--faded {
 		opacity: .7;
 	}
+	&--hidden {
+		display: none;
+	}
+}
+
+.toggler {
+	display: block;
+	font-size: 16px;
 }
