@@ -2234,7 +2234,8 @@ a.bx-next:after {
   }
 
   .timeline__link {
-    top: 85%;
+    top: initial;
+    bottom: -55px;
     left: 51%;
     -webkit-transform: translate(-50%);
     -ms-transform: translate(-50%);
@@ -2476,6 +2477,8 @@ a.bx-next:after {
   .timeline__link {
     left: 50%;
     right: initial;
+    top: initial;
+    bottom: -55px;
   }
 
   .status {
