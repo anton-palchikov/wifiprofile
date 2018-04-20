@@ -1,3 +1,7 @@
+.section__timeline {
+	padding-top: 0;
+}
+
 .timeline__desktop {
 	@include middle {
 		display: none;
@@ -111,7 +115,8 @@
 		right: -12%;
 	}
 	@include middle {
-		top: 85%;
+		top: initial;
+		bottom: -55px;
 		left: 51%;
 		transform: translate(-50%);
 		text-align: center;
@@ -119,6 +124,8 @@
 	@include phones {
 		left: 50%;
 		right: initial;
+		top: initial;
+		bottom: -55px;
 	}
 }
 
