@@ -450,6 +450,10 @@
   font-size: 14px;
 }
 
+.balance__text--bold {
+  font-size: 16px;
+}
+
 .balance__amount {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1626,6 +1630,15 @@ a.bx-next:after {
 
 .timeline__text--faded {
   opacity: .7;
+}
+
+.timeline__text--hidden {
+  display: none;
+}
+
+.toggler {
+  display: block;
+  font-size: 16px;
 }
 
 .verification__status {
