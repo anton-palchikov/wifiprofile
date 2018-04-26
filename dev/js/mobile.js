@@ -5,6 +5,7 @@ $(function () {
             pager: false,
             prevText: '',
             nextText: '',
+            startSlide: 2,
             infiniteLoop: true
         });
     }
