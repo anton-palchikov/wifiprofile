@@ -292,3 +292,25 @@
 		font-size: 15px;
 	}
 }
+
+.access {
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+
+.social__list {
+	align-items: flex-end;
+}
+
+.social__link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	img {
+		height: 38px;
+	}
+	svg {
+		height: 32px;
+	}
+}
