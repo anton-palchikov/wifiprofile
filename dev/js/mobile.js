@@ -5,7 +5,7 @@ $(function () {
             pager: false,
             prevText: '',
             nextText: '',
-            startSlide: 2,
+            startSlide: 4,
             infiniteLoop: true
         });
     }
