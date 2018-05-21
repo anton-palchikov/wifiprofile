@@ -158,6 +158,9 @@
 	@include phones {
 		width: 100%;
 	}
+	&--center {
+		margin: 20px auto;
+	}
 }
 
 .file__text {

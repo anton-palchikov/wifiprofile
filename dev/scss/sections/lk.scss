@@ -43,6 +43,9 @@
 			min-width: initial;
 		}
 	}
+	&--column {
+		flex-direction: column;
+	}
 	@include phones {
 		flex-direction: column;
 		align-items: flex-start;
