@@ -1,22 +1,21 @@
-$(function() {
-    if($(window).width() <= 575) {
+$(function () {
+    if ($(window).width() <= 575) {
 
         $('.bonus__slider').bxSlider({
             pager: false,
             prevText: '',
             nextText: '',
-            startSlide: 1,
-            infiniteLoop: false
+            infiniteLoop: true
         });
     }
 })
 
 $("[data-fancybox]").fancybox({
-    touch : false
+    touch: false
 });
 
 if ($(window).width() <= 575) {
     $("[data-fancybox]").fancybox({
-        touch : true
+        touch: true
     });
 }
