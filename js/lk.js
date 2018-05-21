@@ -12,6 +12,15 @@ $(window).on('load', function () {
             scrollTop: target.offset().top - 100
         }, 1000);
     });
+
+    $('.toggler').click(function (e) {
+        e.preventDefault();
+        let text = $(this).text();
+        $($(this).attr('href')).slideToggle(300);
+
+        $(this).text(text == 'Read more' ? 'Close' : 'Read more');
+        return false;
+    });
 });
 
 $(window).scroll(function () {

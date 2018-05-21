@@ -229,97 +229,31 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="email__confirm">
-                                <div class="confirm__text">We’re send you an email confirmation link. Please, go to the mail and follow the link.</div>
-                                <a href="#" class="btn btn__buy btn--blik btn--resend">Resend</a>
-                            </div>
-                            <div class="contact__form">
-                                <form action="" class="form__elem">
-                                    <div class="form__header">
-                                        <div class="form__title mb-0">Your contact information</div>
-                                        <a href="#" class="btn btn__buy btn--pass">Change password</a>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-7">
-                                            <div class="form__row">
-                                                <label for="name" class="input__title">Name</label>
-                                                <input type="text" class="form__input form__input--2" id="name">
-                                            </div>
-                                            <div class="form__row">
-                                                <label for="surname" class="input__title">Surname</label>
-                                                <input type="text" class="form__input form__input--2" id="surname">
-                                            </div>
-                                            <div class="form__row">
-                                                <label for="email" class="input__title">Email</label>
-                                                <input type="text" class="form__input form__input--2" id="email">
+                            <div class="balance__card">
+                                <div class="balance__title balance__title--center">
+                                    Identification
+                                </div>
+                                <div class="form">
+                                    <form action="/" class="form__elem">
+                                        <div class="file__wrapper file__wrapper--center">
+                                            <input type="file" class="file" name="file">
+                                            <img src="img/file-img.png" alt="" class="file__image">
+                                            <div class="file__text">
+                                                Click to upload Passport / Driving License
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form__row">
-                                                <label for="country" class="input__title">Country</label>
-                                                <select class="form__input form__input--select form__input--3" id="country">
-                                                    <option>Japan</option>
-                                                </select>
-                                                <i class="fa fa-angle-down input__arrow" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="form__row">
-                                                <label for="phone" class="input__title">Phone</label>
-                                                <input type="tel" class="form__input form__input--phone form__input--3" id="phone">
-                                            </div>
+                                        <div class="balance__title balance__title--center">
+                                            Add Your Existing Ethereum Wallet
                                         </div>
-                                    </div>
-                                    <div class="row no-gutters">
-                                        <div class="col-lg-2 hidden-md"></div>
-                                        <div class="col-lg-8">
-                                            <div class="form__bottom">
-                                                <!-- <div class="chinesse__warning">
-                                                                <div class="warning__title">Are you Chinese?</div>
-                                                                <div class="warning__text">We not have clear information on how should be treated this sale in Сhina,
-                                                                    and based on this we unfortunately should close this sale for Chinese
-                                                                    participants.
-                                                                </div>
-                                                            </div> -->
-                                                <div class="form__row form__row--2 form__row--row">
-                                                    <input type="checkbox" class="form__check" id="check">
-                                                    <label for="check" class="input__title">I confirm that I have read and understand the
-                                                        <a href="#" class="lk__link">Wifi World Privacy Policy</a>, the
-                                                        <a href="#" class="lk__link">Initial Saft Offering Memorandum</a>, the
-                                                        <a href="#" class="lk__link">White Paper</a>, the
-                                                        <a href="#" class="lk__link">SAFT</a> and accept the terms and conditions.
-                                                    </label>
-                                                </div>
-                                                <div class="form__row form__row--2">
-                                                    <button type="submit" class="btn btn__buy btn--blik btn__lk btn--lk-small">
-                                                        SAVE
-                                                    </button>
-                                                </div>
-                                                <div class="balance__title">
-                                                    The User’s Digital signature
-                                                </div>
-                                                <div class="lk__link">
-                                                    After registration on the website, https://en.worldwifi.io/ the User receives a Login and Password to access the WORLD WIFI
-                                                    platform.
-                                                    <br>
-                                                    <br> By using the Login and Password the User confirms the formation of his
-                                                    or her User’s Electronic signature, and the information in electronic
-                                                    form, signed by the User using the Electronic signature (using his or
-                                                    her Login and Password), shall be accepted by the User and the We Tokens
-                                                    to be an electronic document equal to a paper document signed by a handwritten
-                                                    signature.
-                                                    <br>
-                                                    <br> All actions carried out with the use of Login and Password of the user
-                                                    (Electronic signature), considered to be executed by the User.
-                                                    <br>
-                                                    <br> User’s account registration constitutes an acknowledgement that User
-                                                    is able to electronically receive, download, and print the Simple Agreement
-                                                    of Future Token and any amendments.
-                                                </div>
-                                            </div>
+                                        <div class="form__row form__row--column">
+                                            <label for="wallet" class="input__title">Wallet address:</label>
+                                            <input type="text" class="form__input form__input--2" name="wallet" id="wallet">
                                         </div>
-                                    </div>
-                                </form>
+                                        <button type="submit" class="btn btn__buy btn--blik btn__lk btn--wallet">
+                                            Save
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
